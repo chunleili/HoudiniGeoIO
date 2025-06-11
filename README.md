@@ -24,3 +24,17 @@ auto& [positions2 ,indices2] = EasyReadTetFromHoudini(
 
 // 两种选一种即可。
 ```
+
+## 集成到自己的项目
+利用HoudiniGeoIO/cmake/HoudiniGeoIO-config.cmake文件可以将HoudiniGeoIO作为一个模块集成到自己的项目中。
+```
+find_package(HoudiniGeoIO REQUIRED PATHS /path/to/HoudiniGeoIO)
+SET (YOUR_SRCS 
+	${YOUR_SRCS}
+	${HoudiniGeoIO_SRCS}
+)
+add_executable(YouApplication 
+	${YOUR_SRCS}
+)
+target_include_directories(YouApplication PRIVATE ${HoudiniGeoIO_INCLUDE_DIR})
+```
