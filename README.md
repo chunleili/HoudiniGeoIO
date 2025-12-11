@@ -1,4 +1,4 @@
-一个简单的读取Houdini .geo文件的c++代码脚本。
+一个简单的读取Houdini .geo文件的c++代码脚本。并且还包含了Python版本如何读入。
 # C++ 读入Houdini .geo文件
 （在当前文件夹）
 
