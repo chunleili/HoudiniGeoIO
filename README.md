@@ -1,5 +1,5 @@
 一个简单的读取Houdini .geo文件的c++代码脚本。
-
+# C++ 读入Houdini .geo文件
 （在当前文件夹）
 
 编译：build.bat
@@ -38,3 +38,7 @@ add_executable(YouApplication
 )
 target_include_directories(YouApplication PRIVATE ${HoudiniGeoIO_INCLUDE_DIR})
 ```
+
+
+# Python读入Houdini .geo文件
+只需要geo.py，不需要其他任何文件。可直接运行geo.py来看使用效果。
